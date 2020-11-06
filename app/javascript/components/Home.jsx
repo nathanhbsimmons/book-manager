@@ -1,23 +1,13 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react';
+import Books from './Books'
 
-export default () => (
-  <div className="vw-100 vh-100 primary-color d-flex align-items-center justify-content-center">
-    <div className="jumbotron jumbotron-fluid bg-transparent">
-      <div className="container secondary-color">
-        <h1 className="display-4">Book Manager</h1>
-        <p className="lead">
-          Your personal book manager.
-        </p>
-        <hr className="my-4" />
-        <Link
-          to="/books"
-          className="btn btn-lg custom-button"
-          role="button"
-        >
-          View Books
-        </Link>
-      </div>
-    </div>
-  </div>
-);
+//header with navigation buttons goes in this component
+function Home() {
+    return (
+        <div style={{ display:'flex', flexWrap: 'wrap' }}>
+            <Books/>
+        </div>
+    )
+}
+
+export default Home;
