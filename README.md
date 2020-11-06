@@ -3,34 +3,45 @@
 TODO:
 
 -implement E2E tests using Rspec and Jest and RTL and Cypress
-    -EXAMPLES:
-        -rspec: describe “index by author ascending”, :type => :request dodescribe “index by author ascending, :type => :request do
-                before do
-                get ‘/api/books/index’
-                end
-                it ‘returns a successful response status’ do
-                expect(response).to have_http_status(200)
-                end
-                end
-        -jest/RTL: test('OrganizationSettingsTable renders', async () => {
-                    expect.assertions(2);
-                        render(<Books/>);
-                        const tablerows = screen.getAllByRole('tr');
-                        expect(tablerows).toHaveLength(3);
-                    });
-        -Cypress: describe('Test', () => {
-                        it('Doesn't test much', () => {
-                            expect(true).to.equal(true)
-                        })
-                    })
+
+EXAMPLES:
+
+-rspec: `describe “index by author ascending”, :type => :request dodescribe “index by author ascending, :type => :request do
+        before do
+        get ‘/api/books/index’
+        end
+        it ‘returns a successful response status’ do
+        expect(response).to have_http_status(200)
+        end
+        end`
+
+-jest/RTL: `test('OrganizationSettingsTable renders', async () => {
+            expect.assertions(2);
+                render(<Books/>);
+                const tablerows = screen.getAllByRole('tr');
+                expect(tablerows).toHaveLength(3);
+            });`
+
+-Cypress: `describe('Test', () => {
+                it('Doesn't test much', () => {
+                    expect(true).to.equal(true)
+                })
+            })`
 
 -React router needs browser history routing implemented
+
 -error in fetch calls will need to gracefully push history back to previous successful path
+
 -need functional buttons and form input UI for edit/add/delete (ruby api code is there)
-    -delete refreshes book list
-    -edit refreshes book with updated data
-    -add updates db with book record and routes to single book display page for user feedback of successful book entry
+
+-delete refreshes book list
+
+-edit refreshes book with updated data
+
+-add updates db with book record and routes to single book display page for user feedback of successful book entry
+
 -form inputs with clear error messages and disabled submit button if user input is missing isbn/title/author (enforced in model as well)
+
 -header with page title and site navigation buttons
 
 
