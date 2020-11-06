@@ -30,7 +30,6 @@ export default function Books() {
 
   return (
     books.map((book, i)=>{
-      console.log(book)
       return  <table key={i + book.isbn} style={{border: '3px solid black', margin: '20px', maxWidth: '300px' }}>
                 <tbody>
                   {Object.keys(book).map((value, i)=> {
