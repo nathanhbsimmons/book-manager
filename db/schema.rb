@@ -16,11 +16,11 @@ ActiveRecord::Schema.define(version: 2020_11_05_004341) do
   enable_extension "plpgsql"
 
   create_table "books", force: :cascade do |t|
-    t.string "isbn", null: false
     t.text "title", null: false
     t.text "author", null: false
     t.text "illustrator"
     t.text "edition"
+    t.string "isbn", null: false
     t.text "notes_description"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

@@ -36,15 +36,15 @@ EXAMPLES:
 
 -delete refreshes book list
 
--edit refreshes book with updated data
+-add routes to add page and updates db with book record and routes to single read-only book display page for user feedback of successful book entry
 
--add updates db with book record and routes to single book display page for user feedback of successful book entry
+-edit could be done using same page as add but with inputs prepoulated. once edit successful, routes to single read-only book display page for user feedback of successful book edit
 
 -form inputs with clear error messages and disabled submit button if user input is missing isbn/title/author (enforced in model as well)
 
 -header with page title and site navigation buttons
 
--book tables need to be ordered w/ title and author first, notes/description at the bottom. left column row headers need to have labels i/o simply displaying key. id and create_at/updated_at need to be filtered out.
+-left column row headers need to have labels i/o simply displaying key
 
 
 

@@ -4,7 +4,8 @@ import Books from './Books'
 //header with navigation buttons goes in this component
 function Home() {
     return (
-        <div style={{ display:'flex', flexWrap: 'wrap' }}>
+        <div>
+            <h1 style={{ textAlign: 'center' }}>Book Manager</h1>
             <Books/>
         </div>
     )
