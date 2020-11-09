@@ -1,5 +1,9 @@
 # README
 
+rails s --binding=127.0.0.1
+
+localhost:3000
+
 TODO:
 
 -implement E2E tests using Rspec and Jest and RTL and Cypress
