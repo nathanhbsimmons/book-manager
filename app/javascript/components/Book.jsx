@@ -1,11 +1,11 @@
 import React from 'react';
 
-function Bookpage() {
+function Book() {
     return (
         <div style={{ display:'flex', flexWrap: 'wrap' }}>
-            Book page goes here
+            SIngle book info goes here
         </div>
     )
 }
 
-export default Bookpage;
+export default Book;
