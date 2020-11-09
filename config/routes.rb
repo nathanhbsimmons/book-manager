@@ -2,7 +2,6 @@ Rails.application.routes.draw do
   namespace :api do
     get 'books/index'
     post 'books/create'
-    # should show and destroy be appended with books path??
     get '/show/:id', to: 'books#show'
     delete '/destroy/:id', to: 'books#destroy'
   end
